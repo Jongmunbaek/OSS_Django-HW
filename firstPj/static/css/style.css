@@ -1,0 +1,256 @@
+*{ /* 기본 속성 없애기 및 설정 */
+    font-family: 'Noto sans KR', sans-serif;
+    list-style : none; /*목록 점 없애기*/
+    text-decoration: none; /*색깔, 밑줄 없애기*/
+    border-collapse: collapse; /*테이블 선 통합-> 붙여주기*/
+    margin:0px; 
+    padding:0px;
+    color:#000;
+ }
+
+
+h1{
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.content1{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+ .content2{
+    font-size: 24px;
+}
+
+ .content3{
+    font-size: 14px;
+    font-weight: 100;
+ }
+/*content 폰트를 볼드로 통일*/
+.content_bold{
+    font-size: 18px;
+    font-weight: bold;
+}
+ /*content4(내용)의 폰트 사이즈를 18px로 통일*/
+ .content4{
+    font-size: 18px;
+}
+
+/* INTRO_AREA 시작 */
+ .introArea_bg{
+    background-image:url("../../static/images/단국대.jpg");
+    width:100%;
+    height: 786px;
+    background-size: cover;
+}
+
+.header{
+    display:flex;
+    width: 1280px;
+    margin:auto;
+    height: 86px;
+}
+
+.search_area{
+    width: 300px;
+    height: 40px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin-top: 24px;
+}
+
+.search_area > form > input{
+    border: none;
+    width: 250px;
+    height: 40px;
+    background: rgba(0,0,0,0.0);
+    color:#fff;
+    padding-left: 10px;
+}
+
+.search_area > form > span{
+    width: 50px;
+    color:#fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navigation{
+    display:flex;
+    justify-content:flex-end;
+    line-height: 86px;
+    width:calc(1280px - 300px);
+}
+
+.navigation > li{
+    margin-left:84px;
+}
+
+.navigation > li > a{
+    color:#fff;
+}
+
+.introArea_text{
+    width:100%;
+              /*상-우-하-좌*/
+    margin: 231px auto 231px auto;
+    text-align: center;
+}
+
+.introArea_text > h1,
+.introArea_text > h4{
+    color:#fff;
+}
+
+/* INTRO_AREA 끝 */
+
+/*Basic_Info 시작 */
+.Basic_Info{
+    /*보여지는 것만 66픽셀 위로/ 자신의 영역은 그대로 유지*/
+    position: relative;
+    top: -66px;
+    display:flex;
+    width: 1280px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin:auto;
+}
+.Basic_Info > li{
+    flex: 1;
+    height: 132px;
+}
+.Basic_Info > li > div {
+    text-align: center;
+    margin-top: 37px;
+    height: 57px;
+}
+
+.Basic_Info > li:not(:last-child) > div{
+    /*마지막 list에 있는 div만 오른쪽 border 제외*/
+    border-right:1px solid gray;
+}
+/*Basic_Info 끝 */
+
+/* Main_Info 시작 */
+.main_text0{
+    width: 100%;
+    height: 601px;
+    margin-top: -132px;
+    background: #F1F2F3;
+}
+
+.main_text0 > h1{
+    padding-top: 116px;
+    text-align: center;
+}
+.main_text0 > .content1{
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    width: 1280px;
+    height: 302px;
+    margin: auto;
+}
+.icons > li{
+    flex:1;
+    background: white;
+    margin-top: 49px;
+    height: 302px;
+    text-align: center;
+}
+
+.icons > li > .icon_img{
+    margin-top: 36px;
+}
+
+.icons > li:not(:last-child){
+    /* 마지막 요소만 빼고 오른쪽에 20px의 마진을 줌 */
+    margin-right: 20px;
+}
+
+.icons > li > .content3 {
+    width: 240px;
+     /*상-우-하-좌*/
+     margin: 15px auto auto auto;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.main_text1{
+    width: 100%;
+    height: 659px;
+}
+.main_text1 > h1 {
+    padding-top: 50px;
+    text-align: center;
+}
+.main_text1 > .content1 {
+    text-align: center;
+}
+.MAIN_INTRO{
+    width: 1280px;
+    display: flex;
+    margin: 20px auto auto 200px;
+    height: 427px;
+}
+.MAIN_INTRO > .mbti_photo > video {
+    max-width: 80%; 
+    display: block; 
+    margin: 20px auto;
+    width: 640px;
+    height: 426px;
+}
+
+.MAIN_INTRO > .content4{
+    padding: 20px;
+}
+
+.MAIN_INTRO > .content4 > h2{
+    margin-bottom: 27px;
+    color:red;
+}
+
+/* Main _Intro2 */
+.main_intro2{
+    width: 100%;
+    height: 418px;
+    background-image:url("../images/단국대.jpg");
+    background-size: cover;
+    margin-top: 30px;
+}
+
+.main_intro2 > ul{
+    display: flex;
+    padding-top: 138px;
+}
+
+.main_intro2 > ul > li {
+    flex: 1;
+    text-align: center;
+}
+
+.main_intro2 > ul > li > div > h1,
+.main_intro2 > ul > li > div > h2{
+    flex: 1;
+    color:#fff
+}
+
+footer{
+    display:flex;
+    background: #1f1f1f;
+    padding: 30px;
+}
+
+footer > div:first-child{
+    flex: 3;
+    text-align: center;
+    color: #fff;
+}
+
+footer > div:last-child{
+    flex: 9;
+    color: #fff;
+}
